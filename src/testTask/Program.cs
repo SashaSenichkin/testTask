@@ -14,6 +14,8 @@ namespace testTask
         [STAThread]
         static void Main()
         {
+            Console.WriteLine(Interop.Sum(1, 1));
+            return;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
