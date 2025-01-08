@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testTask", "testTask\testTa
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pluslib", "pluslib\pluslib.vcxproj", "{1BFD1B6E-092E-4A02-937F-438089477583}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{B2D5D3E6-05E5-4C8A-B067-86BA90309FD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{1BFD1B6E-092E-4A02-937F-438089477583}.Release|Any CPU.Build.0 = Release|Win32
 		{1BFD1B6E-092E-4A02-937F-438089477583}.Debug|Any CPU.ActiveCfg = Debug|x64
 		{1BFD1B6E-092E-4A02-937F-438089477583}.Debug|Any CPU.Build.0 = Debug|x64
+		{B2D5D3E6-05E5-4C8A-B067-86BA90309FD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2D5D3E6-05E5-4C8A-B067-86BA90309FD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2D5D3E6-05E5-4C8A-B067-86BA90309FD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2D5D3E6-05E5-4C8A-B067-86BA90309FD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
