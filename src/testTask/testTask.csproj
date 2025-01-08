@@ -5,7 +5,7 @@
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
         <ProjectGuid>{5CD3EF0D-4416-44CC-9347-792A543D3D2D}</ProjectGuid>
-        <OutputType>WinExe</OutputType>
+        <OutputType>Exe</OutputType>
         <RootNamespace>testTask</RootNamespace>
         <AssemblyName>testTask</AssemblyName>
         <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -18,7 +18,7 @@
         <DebugSymbols>true</DebugSymbols>
         <DebugType>full</DebugType>
         <Optimize>false</Optimize>
-        <OutputPath>bin\Debug\</OutputPath>
+        <OutputPath>..\Output\Debug\</OutputPath>
         <DefineConstants>DEBUG;TRACE</DefineConstants>
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
@@ -27,7 +27,7 @@
         <PlatformTarget>AnyCPU</PlatformTarget>
         <DebugType>pdbonly</DebugType>
         <Optimize>true</Optimize>
-        <OutputPath>bin\Release\</OutputPath>
+        <OutputPath>..\Output\Release\</OutputPath>
         <DefineConstants>TRACE</DefineConstants>
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>

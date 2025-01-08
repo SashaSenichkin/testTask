@@ -1,12 +1,6 @@
-#include "pch.h"
 #pragma once
 
-#ifdef PLUSLIB_EXPORTS
 #define PLUSLIB_API __declspec(dllexport)
-#else
-#define PLUSLIB_API __declspec(dllimport)
-#endif
+#include <cstdint>
 
-
-extern "C" PLUSLIB_API long sum(
-    const unsigned long long a, const unsigned long long b);
+extern "C" int32_t PLUSLIB_API __stdcall sum(int32_t a, int32_t b);

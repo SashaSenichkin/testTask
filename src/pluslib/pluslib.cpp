@@ -1,11 +1,6 @@
-#include "pch.h"
-#include <utility>
-#include <limits.h>
 #include "pluslib.h"
 
-long sum(
-    const unsigned long long a,
-    const unsigned long long b)
+int32_t __stdcall sum(int32_t a, int32_t b)
 {
     return a + b;
 }
