@@ -2,14 +2,14 @@
 
 namespace testTask;
 
-public class Interop
+public unsafe partial class Interop
 {
-    [DllImport( @"..\pluslib-x64.dll", CallingConvention=CallingConvention.StdCall, ExactSpelling = false, EntryPoint = "sum")]
-    private static extern int Sum64Internal(int a, int b);
+    [LibraryImport( @"..\pluslib-x64.dll", SetLastError = true, StringMarshalling = StringMarshalling.Utf8, EntryPoint = "sum")]
+    private static partial int Sum64Internal(int a, int b);
         
-    [DllImport( @"..\pluslib-x86", CallingConvention=CallingConvention.StdCall, ExactSpelling = false, EntryPoint = "sum")]
-    private static extern int Sum32Internal(int a, int b);
-        
+    [LibraryImport( @"..\pluslib-x86", SetLastError = true, StringMarshalling = StringMarshalling.Utf8, EntryPoint = "sum")]
+    private static partial int Sum32Internal(int a, int b);
+    
     public static int Sum(int a, int b)
     {
         return IntPtr.Size == 4 ? Sum32Internal(a, b) : Sum64Internal(a, b);
