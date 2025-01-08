@@ -5,10 +5,10 @@ namespace testTask
 {
     public class Interop
     {
-        [DllImport( "pluslib-x64", CallingConvention=CallingConvention.StdCall, ExactSpelling = false, EntryPoint = "sum")]
+        [DllImport( @"..\pluslib-x64.dll", CallingConvention=CallingConvention.StdCall, ExactSpelling = false, EntryPoint = "sum")]
         private static extern int Sum64Internal(int a, int b);
         
-        [DllImport( "pluslib-x86", CallingConvention=CallingConvention.StdCall, ExactSpelling = false, EntryPoint = "sum")]
+        [DllImport( @"..\pluslib-x86", CallingConvention=CallingConvention.StdCall, ExactSpelling = false, EntryPoint = "sum")]
         private static extern int Sum32Internal(int a, int b);
         
         public static int Sum(int a, int b)
